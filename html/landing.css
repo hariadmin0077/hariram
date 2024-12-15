@@ -1,0 +1,120 @@
+:root{
+    --red:crimson;
+    --green:#53bf9d;
+    --yellow:#ffc54d;
+    --white:whitesmoke;
+}
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(/vs\ code/html/image/hotel.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+}
+header{
+    display: flex;
+    padding: 1em;
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+}
+nav{
+    flex: 2;
+    display: flex;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color:var(--red);
+    font: size 3.5em;
+    font-weight: bold;
+}
+.tagline2{
+    color: var(--yellow);
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(to right,rgb(104, 103, 103),rgb(20, 18, 18));
+    color: var(--white);
+}
+#menuheading,#locheading{
+    background: linear-gradient(to right,rgb(105, 102, 102),rgb(20, 18, 18));
+    font-size: 2.5em;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: var(--green);
+    font-size: 1.8em;
+}
+.table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span2;
+}
+.locations{
+    display: grid;
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+        grid-template-columns: 1fr 1fr 1fr;
+        background: linear-gradient(to right, rgb(104, 103, 103), rgb(20, 18, 18));
+        color: var(--white);
+}
+.locations h2{
+    color: var(--green);
+    margin-bottom: .8em;
+
+}
+.locations div{
+    flex: 1;
+    padding: 1em;
+}

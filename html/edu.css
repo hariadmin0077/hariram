@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: honeydew;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td,th{
+    border: 1px solid gray;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: gray;
+}
+.button {
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    padding: 5px 2px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
